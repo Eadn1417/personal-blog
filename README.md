@@ -1,4 +1,3 @@
-```markdown
 # 个人博客系统
 一个基于前后端分离架构的现代化博客系统，实现了完整的用户管理、文章发布和权限控制功能。
 ## 🌟 在线演示
@@ -82,7 +81,7 @@ npm run dev
 docker-compose up -d
 # 查看运行状态
 docker-compose ps
-```
+
 ## 📁 项目结构
 ```
 myblog/

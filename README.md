@@ -92,7 +92,7 @@ myblog/
 │   │   │   └── resources/  # 配置文件
 │   │   └── test/          # 测试代码
 │   └── pom.xml            # Maven配置
-├── frontend/               # 前端项目
+├── satokentest/               # 前端项目
 │   ├── src/
 │   │   ├── components/    # Vue组件
 │   │   ├── views/         # 页面视图

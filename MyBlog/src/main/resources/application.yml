@@ -1,0 +1,48 @@
+# 数据库连接
+spring:
+  datasource:
+    url: jdbc:mysql://mysql:3306/blog?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: bloguser
+    password: blogpass
+    driver-class-name: com.mysql.cj.jdbc.Driver  # 与datasource保持同一层级缩进
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# Sa-Token 核心配置
+sa-token:
+  # ========================
+  #********
+  # 1. Token 基础配置  这一块要格外注意，如果后端总是显示token无效，可能就是这个设置的名称没有和前端对上，让前端根据这个来修改
+  # ========================
+  token-name: Authorization         # Token名称 (前后端需要保持一致)
+  token-prefix: Bearer              # Token前缀 (通常用于Authorization头)
+  token-style: uuid                 # Token生成风格: uuid, simple-uuid, random-32, random-64, tik
+
+  # ========================
+  # 2. Token 有效期配置
+  # ========================
+  timeout: 86400                    # Token绝对有效期，单位秒 (默认30天)
+  activity-timeout: -1              # Token无操作有效期，-1表示不限制
+  auto-renew: true                  # 是否开启自动续期（每次访问都会重置有效期）
+
+  # ========================
+  # 3. Token 读取位置配置
+  # ========================
+  is-read-body: false               # 是否从请求体读取Token
+  is-read-header: true              # 是否从请求头读取Token (前后端分离推荐true)
+  is-read-cookie: false             # 是否从Cookie读取Token (前后端分离推荐false)
+
+  # ========================
+  # 4. 登录会话配置
+  # ========================
+  is-concurrent: true               # 是否允许同一账号并发登录
+  is-share: true                    # 在多人登录同一账号时，是否共享同一个Token
+  token-session-check-login: true   # 获取Token-Session时是否必须登录
+
+  # ========================
+  # 5. 日志与调试配置
+  # ========================
+  is-log: true                      # 是否打印Sa-Token日志
+  is-print: true                    # 是否在控制台打印登录日志
+  print-short-name: false           # 是否打印简略日志

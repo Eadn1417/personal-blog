@@ -50,8 +50,8 @@
 <img width="2499" height="1367" alt="普通用户登录后的页面" src="https://github.com/user-attachments/assets/e5d2fc17-a667-40f1-b313-f2890062150d" />
 ## 🚀 快速开始
 ### 环境要求
-- Java 8+
-- Node.js 16+
+- jdk 17
+- Node.js 20
 - MySQL 8.0
 - Docker & Docker Compose
 ### 本地运行
@@ -81,7 +81,7 @@ npm run dev
 docker-compose up -d
 # 查看运行状态
 docker-compose ps
-
+```
 ## 📁 项目结构
 ```
 myblog/

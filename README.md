@@ -1,5 +1,5 @@
 # personal-blog
-一个基于Spring Boot + Vue的个人博客系统,已经通过Dcoker部署在我的虚拟机上了，使用内网穿透工具ngrok可以公开出来给大家看见。
+一个基于前后端分离的的个人博客系统,前端使用了Vue,axios;后端使用了SpringBoot,MybatisPlus,Sa-Token;已经通过Dcoker部署在我的虚拟机上了，使用内网穿透工具ngrok可以公开出来给大家看见,链接为https://lairdly-uromeric-aracelis.ngrok-free.dev，没有买一台云服务器来部署，所以只有在我使用虚拟机启动时，大家才可以看见页面。
 # 效果图
 ## 未登录时的首页：
 

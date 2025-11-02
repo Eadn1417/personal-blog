@@ -4,6 +4,7 @@
 ## 未登录时的首页：
 
 <img width="2538" height="1398" alt="屏幕截图 2025-11-02 164017" src="https://github.com/user-attachments/assets/88164c90-a33c-464c-be05-eb83c38833a3" />
+
 ## 管理员登录后的页面：
 
 <img width="2534" height="1390" alt="屏幕截图 2025-11-02 164045" src="https://github.com/user-attachments/assets/3079d535-5d21-4f66-921f-c1bc8638f883" />
